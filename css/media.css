@@ -1,0 +1,232 @@
+@media(max-width: 761px) {
+    #sidebarLeft.active {
+        margin-left: 0;
+        position: fixed;
+        left: 0;
+        height: 100vh;
+    }
+
+    /* footer*/
+    .footer-content {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer-nav {
+        width: 100%;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .footer-feedback{
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .footer-nav{
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    #sidebarRight {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .sidebar-right-footer{
+        width: 300px;
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+
+    .nav-tabs .nav-item {
+        margin-bottom: 10px;
+        text-align: center;
+        -webkit-box-shadow: inset -1px 0 0 #D9D9D9, inset 1px 0 0 #D9D9D9, inset 0 1px 0 #D9D9D9, inset 0 -1px 0 #D9D9D9;
+        box-shadow: inset -1px 0 0 #D9D9D9, inset 1px 0 0 #D9D9D9, inset 0 1px 0 #D9D9D9, inset 0 -1px 0 #D9D9D9;
+    }
+
+    .nav-item > .nav-link{
+        margin: 0;
+    }
+
+    .nav-tabs {
+        margin: 0 15px;
+        border-bottom: none;
+    }
+
+    .account-info {
+        margin-top: 35px;
+    }
+
+    .tab-content>.tab-pane {
+        padding: 15px 20px;
+    }
+
+    .nav-tabs:first-child {
+        margin-left: 15px;
+    }
+
+    .notification-content h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .notification-content h3{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .notification-content p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+@media(max-width: 487px) {
+    /* footer*/
+    .footer-content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer-nav {
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+
+    .feedback,
+    .request-call,
+    .social-wrap > p,
+    .payment-wrap > p{
+        text-align: center;
+    }
+
+    .social-wrap,
+    .payment-wrap{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .footer-social,
+    .footer-feedback{
+        margin-top: 24px;
+    }
+
+    .footer-social {
+        margin-top: 15px;
+    }
+
+}
+
+/* IE */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .modal-footer{
+        background-color: #fff;
+    }
+    .headline-tabs h3{
+        color: #1A1A1A;
+    }
+    .account-notification{
+        background-color: #fff;
+    }
+    .tab-content>.active,
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        background-color: #f6f9fc ;
+    }
+    .news-content p{
+        color:  #999999;
+    }
+    .sidebar-right-footer{
+        background-color: #fff;
+    }
+    .sidebar-right-header > h4 {
+        color: #717171;
+    }
+    #sidebarRight {
+        background-color:  #fff;
+    }
+    .social-wrap > p,
+    .payment-wrap > p{
+        color:  #999999;
+    }
+    .project-name span{
+        color:  #999999;
+    }
+    .request-call > p{
+        color:  #999999;
+    }
+    .tell{
+        color: #1A1A1A;
+    }
+    .btn-menu:hover{
+        background-color: #2DBE61;
+    }
+    .header-wrap{
+        background-color:  #fff;
+    }
+    #sidebarLeft {
+        background-color: #fff;
+    }
+    .btn-success{
+        border: 1px solid  #2DBE61;
+        background-color: #2DBE61;
+    }
+
+    .btn-success:hover{
+        border: 1px solid  #2DBE61;
+        background-color: #fff;
+    }
+    h4{
+        color: #1A1A1A;
+    }
+    a{
+        color: #1A1A1A;
+    }
+    a:hover{
+        color: #2DBE61;
+    }
+    .success {
+        background-color: var(--success);
+    }
+
+    .danger{
+        background-color:  #D0021B;
+    }
+
+    .inform{
+        background-color:  #4CB8BF;
+    }
+
+    .warning{
+        background-color: #F79E1B;
+    }
+
+    .open{
+        background-color: #F8F8F8;
+    }
+
+    .no-open{
+        background-color: #fff;
+    }
+}

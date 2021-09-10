@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>You control</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!--  fixed scrooll header -->
+    <div class="bottomMenu hide">
+        <div class="header-wrap">
+            <div class="menu-wrap">
+                <button class="btn-menu info sidebarCollapse" type="button"><span
+                        class="notificationNews">5</span>
+                </button>
+                <button class="btn-menu user"></button>
+            </div>
+        </div>
+    </div>
+    <!--  fixed scrooll header -->
+
+    <!--  Left sidebar -->
+    <nav id="sidebarLeft" class="animation-sl">
+        <div class="sidebarLeft-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="logo you control">
+                </a>
+            </div>
+            <div>
+                <button type="button" id="sidebarCollapseLeft" class="btn-nav">
+                    <img src="img/menu.svg"  alt="menu">
+                </button>
+            </div>
+        </div>
+        <div>
+            <img src="img/sidebar-left.png" class="w-100" alt="sidebar-left">
+        </div>
+    </nav>
+    <!--  Left sidebar -->
+
+    <!-- Page Content -->
+    <div id="content">
+
+        <div class="header-wrap">
+            <div class="menu-wrap">
+                <button class="btn-menu info sidebarCollapse" type="button" ><span
+                        class="notificationNews">5</span>
+                </button>
+                <button class="btn-menu user"></button>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <main class="container p-0">
+            <!-- Sidebar right -->
+            <div class="sidebar s-right">
+                <div id="sidebarRight" class="animation-sr">
+                    <div class="newNews-wrap">
+                        <div class="newNews hide">
+                            <div class="sidebar-right-header">
+                                <h4>Сповіщення від YouControl</h4>
+                            </div>
+                            <div id="sidebar-right-content" class="sidebar-right-content content-p"></div>
+                        </div>
+
+                        <div class="sidebar-right-footer">
+                            <a href="account.html" class="btn btn-success w-100">Переглянути всі</a>
+                        </div>
+                    </div>
+
+                    <div class="noNews hide">
+                        <img src="img/news.svg" alt="news">
+                        <p>Тут будуть показані всі нові сповіщення</p>
+                    </div>
+                </div>
+            </div>
+            <section class="">
+                <img src="img/content-page.png" class="bg-content" alt="content">
+            </section>
+        </main>
+        <!-- Page Content -->
+
+        <footer class="container p-0">
+            <div class="footer-content">
+                <div class="footer-feedback">
+                    <div class="feedback mb-3">
+                        <h4 class="mb-2">Дзвінок безкоштовний</h4>
+                        <a href="tel:0800309077" class="tell">0 800 309 077</a>
+                        <a href="mailto:mail@youcontrol.com.ua" class="email small-txt">mail@youcontrol.com.ua</a>
+                    </div>
+                    <div class="request-call">
+                        <p>Вирішили купувати?</p>
+                        <button class="btn btn-success" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            Заказать звонок
+                        </button>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-user">
+                        <h4 class="mb-2">Для користувачів</h4>
+                        <ul>
+                            <li><a href="#" class="small-txt">Можливості</a></li>
+                            <li><a href="#" class="small-txt">Кейси</a></li>
+                            <li><a href="#" class="small-txt">Тарифи</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-project">
+                        <h4 class="mb-2">Наші проекти</h4>
+                        <div class="project">
+                            <div class="project-icon">
+                                <img src="img/youscore_logo.svg" alt="YouScore">
+                            </div>
+                            <div class="project-name">
+                                <p class="small-txt">YouScore</p>
+                                <span>Доступ по API</span>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-icon">
+                                <img src="img/extensions.svg" alt="Додаток">
+                            </div>
+                            <div class="project-name">
+                                <p class="small-txt">Додаток</p>
+                                <span>Chrome, Mozilla</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <div class="social-wrap">
+                        <p>©YouControl – повне досьє на кожну компанію України</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="social facebook">
+                                    <img src="img/facebook.svg" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social youtube">
+                                    <img src="img/youtube.svg" alt="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social linkedin">
+                                    <img src="img/linkedin.svg" alt="linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social telegram">
+                                    <img src="img/telegram.svg" alt="telegram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="payment-wrap">
+                        <p>Сплачуйте онлайн:</p>
+                        <ul>
+                            <li class="payment">
+                                <img src="img/visa.svg" alt="visa">
+                            </li>
+                            <li class="payment">
+                                <img src="img/mastercard.svg" alt="mastercard">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</div>
+
+<!-- Modal News -->
+<div class="modal fade" id="modalNews" aria-labelledby="exampleModalScrollableTitle" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body modal-dialog-scrollable">
+                <div class="news-notification">
+                    <span class="notification-category success">оновлення</span>
+                    <p><span class="mr-1">Сьогодні</span>15.09.2020</p>
+                </div>
+                <div class="notification-content mt-4">
+                    <h2>Нові функції моніторингу</h2>
+                    <p>Додайте свою компанію та головних контрагентів до моніторингу та першим дізнавайтесь про істотні зміни офіційних даних.</p>
+                    <ul class="my-4">
+                        <li>Нові кольори</li>
+                        <li>Додавайте більше списків</li>
+                    </ul>
+                    <img src="img/notification1.png" class="w-100" alt="notification">
+                    <h3 class="mt-4">Що нового?</h3>
+                    <p>Якщо ви поставите в моніторинг власне підприємство, то отримаєте автоматичне сповіщення, якщо його дані в реєстрах змінилися без вашої участі. Зі звіту моніторингу ви можете дізнатися про нього навіть раніше співробітників самого підприємства, адже сповіщення з’явиться того самого дня. За своєю ініціативою контрагент навряд чи повідомить вам цю інформацію, а вона може бути критично важливою для вашої співпраці.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Наступне сповіщення</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+<script src="js/news.js"></script>
+<script src="js/main.js"></script>
+</html>
